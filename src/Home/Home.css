@@ -1,0 +1,59 @@
+.icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.icon-envelope {
+    color: #6b5e5e;
+}
+  
+.icon-envelope:hover {
+    color: #333;
+}
+
+.icon-linkedin {
+    color: rgb(88 139 163);
+}
+
+.icon-linkedin:hover {
+    color: #0e76a8;
+}
+
+.icon-github {
+    color: #6b5e5e;
+}
+
+.icon-github:hover {
+    color: #333;
+}
+
+.icon-phone {
+    color: rgb(88 139 163);
+}
+
+.icon-phone:hover {
+    color: #0e76a8;
+}
+
+.home-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+  
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+}

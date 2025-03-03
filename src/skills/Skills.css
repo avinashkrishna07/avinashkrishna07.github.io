@@ -1,0 +1,57 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 40px;
+    grid-auto-rows: auto;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.skillsGrid.fadeIn {
+    opacity: 1;
+}
+
+.skill-image {
+    height: 150px;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s, border 0.3s;
+}
+
+.skill-image:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+
+@media screen and (max-width: 1080px) {
+    .skillsGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .skill-image {
+        height: 150px;
+        width: 150px;
+    }
+}
+
