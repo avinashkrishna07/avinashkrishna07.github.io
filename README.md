@@ -1,6 +1,6 @@
 ### Portfolio - Avinash Krishna
 
-### [🔗Live Demo🔗](https://avinashkrishna07.github.io/)
+### [🔗Live Demo🔗](https://avinashkrishna07-github-io.onrender.com)
 
 <!-- [![react portfoiio](src/images/WebsiteGif.gif)](https://avinashkrishna07.github.io/) -->
 
